@@ -1,0 +1,517 @@
+body {
+    max-width: 1640px;
+    margin:0 auto;
+    border: 1px solid blue;
+}   
+body h1 {
+    font-family: "Myriad Pro";
+    color: red;
+}
+body span {
+    font-family: "Barlow";
+    font-size: 1.5em;
+    color: red;
+}
+body p{
+    font-family: "Barlow";
+    font-size: 1.5em;
+    color: grey;
+}
+main .motto span {
+    font-family: "Barlow";
+    font-size: 1.5em;
+}
+header .wrapper {
+    max-height: 1204px;
+    display:grid;
+    grid-template-columns: 190px 100px 1250px;
+    grid-column-gap: 65px;
+}
+
+header .wrapper .triangle{
+    
+    width: 165px;
+    height:98px;
+    
+}
+header .wrapper nav {
+    /*margin-left: 462px;*/
+    display: grid;
+    align-items: start;
+}
+
+header .wrapper .logo {
+    display: grid;
+    margin-left: 0px;
+    margin-top:43px;
+}
+
+header .wrapper .logo:hover {
+    cursor: pointer;
+}
+header nav ul {
+    min-width:603px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 114px 114px 130px 114px 114px;
+    list-style: none;
+    justify-content: center;
+    background-color: rgb(73,73,73);
+    margin-top: 0px;
+}
+header nav ul li {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+
+header nav ul li a{
+    color: white;
+    cursor: none;
+    font-family: "Barlow";
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    cursor: pointer;
+}
+header .nav-bar {
+    display: grid;
+    grid-template-columns: 4.2fr 0.5fr;
+    width: 1226px;
+}
+header .socialButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+}
+
+header .socialButtons button {
+    background-color: rgb(73,73,73);
+    border: none;
+}
+main .socialButtons button:hover {
+    cursor: pointer;
+ }
+header .socialButtons button figure {
+    margin: 0px;
+}
+main {
+    display: grid;
+    grid-template-rows: 700px 1300px 1300px 1300px;
+}
+
+main .dach {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 555px;
+   grid-column-gap: 50px;
+}
+main .dach .dachzeile {
+    display: grid;
+    grid-template-rows: 6fr 0.1fr;
+}
+main .dach .dachzeile .headline {
+    align-self: center;
+}
+main .dach .dachzeile .callAction{
+    background-color: red;
+    width:214px;
+}
+main .dach .dachzeile .callAction figure{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+}    
+
+main .dach .callAction span {
+    color: white;
+    font-size: 1.5em;
+    width: 100px;
+}
+main .dach h1{
+    color: red;
+    margin-top:0px;
+}
+main .dach span{
+    color: red;
+    font-size: 1.5em;
+} 
+main .dach p{
+    color:rgb(118,116,117);
+    font-family: "Barlow";
+}
+
+main .leistung  {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 10px;
+}  
+
+main .leistung  figure{
+    margin-left: 0px;
+}
+
+
+main .leistung .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+
+main .leistung .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 40%;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .leistung .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 40%;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+
+main .leistungen {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+}
+
+main .leistungen .item1{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin-left: 50px;
+    grid-row-gap: 30px;
+}
+
+main .leistungen .item{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin-left: 50px;
+    grid-row-gap: 30px;
+}
+
+main .leistung-hover .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .leistung-hover .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .leistung-hover .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+
+main .leistung-click .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .leistung-click .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .leistung-click .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+
+main .fließtext .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .fließtext .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 560px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .fließtext .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 560px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+
+main .fließtext .leistungen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .fließtext .leistungen .item .akkordeon {
+    display: grid;
+    width: 600px;
+}
+
+main .fließtext .leistungen .item .akkordeon .akkordeonItem h1{
+    color: grey;
+} 
+
+main .fließtext .leistungen .item .akkordeon .akkordeonItem1 {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    border:1px solid grey;
+}
+main .fließtext .leistungen .item .akkordeon .akkordeonItem1 button{
+    color: white;
+    font-size: 1.5em;
+    display: grid;
+    align-items: start;
+    padding-top: 27px;
+}
+
+main .fließtext .leistungen .item .akkordeon .akkordeonItem {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    border:1px solid rgb(67,67,67);
+}
+main .fließtext .leistungen .item .akkordeon button{
+    border:none;
+    background-color:rgb(67,67,67);
+}
+main .fließtext .leistungen .item .akkordeon .akkordeonItem1 button{
+   background-color:red;
+}
+main .fließtext .leistungen .item .akkordeon .akkordeonItem1 .akkordeonText{
+    margin-left: 20px;
+}
+
+main .fließtext .leistungen .item .akkordeon .akkordeonItem .akkordeonText{
+    margin-left: 20px;
+}
+
+main .bild .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .bild .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 400px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .bild .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 400px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .bild .bildText {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    margin-left: 40px;
+    grid-column-gap: 400px;
+}
+main .bild .bildTexten {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap:10px;
+}
+main .bild .bildTexten .bildSlice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 41px;
+}
+main .bild .bildText1 {
+    width:428px;
+    height: 427px;
+    background-color: grey;
+}
+main .bild .bildText2 {
+    width:192px;
+    height: 193px;
+    background-color: grey;
+}
+main .bild .bildText3 {
+    width:192px;
+    height: 193px;
+    background-color: grey;
+}
+
+main .timeline .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .timeline .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    width: 400px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .timeline .teaser h1::before {
+    content: "";
+    position: absolute;
+    right:0px;
+    width: 400px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .timeline .timelineImages {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .timeline .timelineImages1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+main .timeline .timelineGeschichte {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-row-gap: 80px;
+}
+
+main .timeline .timelineBody {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 3fr;
+}
+main .timeline .timelineHeader {
+    display: grid;
+    justify-content: center;
+}
+main .timeline .timelineBody .stift {
+    display: grid;
+    justify-content: center;
+}
+
+main .timeline .timelineBody .stift h1{
+    display: grid;
+    justify-content: center;
+}
+
+main .hersteller {
+    margin: 0 auto;
+}
+main .hersteller .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .hersteller .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -235px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .hersteller .teaser h1::before {
+    content: "";
+    position: absolute;
+    right: -235px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .kontakt {
+    margin: 0 auto;
+}
+main .kontakt .teaser h1 {
+    color:grey;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main .kontakt .teaser h1::after {
+    content: "";
+    position: absolute;
+    left: -235px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .kontakt .teaser h1::before {
+    content: "";
+    position: absolute;
+    right: -235px;
+    width: 600px;
+    height: 2px;
+    bottom: 12px;
+    background-color: grey;
+}
+main .kontakt .kontaktFormular {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
